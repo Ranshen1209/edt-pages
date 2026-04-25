@@ -78,20 +78,6 @@
             }
         }
 
-        @keyframes gradientShift {
-            0% {
-                background-position: 0 50%
-            }
-
-            50% {
-                background-position: 100% 50%
-            }
-
-            100% {
-                background-position: 0 50%
-            }
-        }
-
         /* Background and overlay */
         #background-iframe {
             position: fixed;
@@ -145,18 +131,6 @@
             animation: containerAppear 1s ease-out .8s backwards;
             position: relative;
             overflow: hidden
-        }
-
-        .card-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #faab41 0, #f6821f 50%, #faab41 100%);
-            background-size: 200% 100%;
-            animation: gradientShift 3s ease infinite
         }
 
         /* Page title and icon */

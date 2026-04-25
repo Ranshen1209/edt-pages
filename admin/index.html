@@ -9648,7 +9648,8 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 .replace(/[\u4e00-\u9fff]+/g, '')
                 .replace(/[\u3001\uff0c\u3002\uff1b\uff1a\uff08\uff09()\u3010\u3011\u300c\u300d\u300e\u300f\u300a\u300b]/g, ' ')
                 .replace(/\s+/g, ' ')
-                .trim();
+                .trim()
+                .replace(/^\d+\s+(?=[A-Za-z])/, '');
         }
 
         function formatOptionLabel(label, fallback) {

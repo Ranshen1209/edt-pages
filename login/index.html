@@ -18,7 +18,7 @@
             overflow: hidden
         }
 
-        /* 通用动画 */
+        /* Shared animations */
         @keyframes blurOverlayAppear {
             0% {
                 opacity: 0;
@@ -92,7 +92,7 @@
             }
         }
 
-        /* 背景和遮罩层 */
+        /* Background and overlay */
         #background-iframe {
             position: fixed;
             top: 0;
@@ -118,7 +118,7 @@
             opacity: 0
         }
 
-        /* 通用容器包装器 */
+        /* Shared page wrapper */
         .page-wrapper {
             position: fixed;
             top: 0;
@@ -133,7 +133,7 @@
             overflow-y: auto
         }
 
-        /* 通用卡片容器 */
+        /* Shared card container */
         .card-container {
             background: rgba(255, 255, 255, 0.95);
             -webkit-backdrop-filter: blur(20px);
@@ -159,7 +159,7 @@
             animation: gradientShift 3s ease infinite
         }
 
-        /* 页面标题和图标 */
+        /* Page title and icon */
         .page-header {
             margin-bottom: 35px;
             text-align: center
@@ -196,7 +196,7 @@
             letter-spacing: -0.5px
         }
 
-        /* 表单样式 */
+        /* Form styles */
         .page-form {
             display: flex;
             flex-direction: column;
@@ -266,7 +266,7 @@
             color: #6b7280 !important
         }
 
-        /* 按钮样式 */
+        /* Button styles */
         .btn {
             padding: 16px 20px;
             border: 0;
@@ -320,7 +320,7 @@
             pointer-events: none
         }
 
-        /* 页脚提示 */
+        /* Footer note */
         .footer-hint {
             margin-top: 30px;
             font-size: 13px;
@@ -340,7 +340,7 @@
             color: #f6821f
         }
 
-        /* 模态框 */
+        /* Modal */
         .modal-overlay {
             display: none;
             position: fixed;
@@ -385,7 +385,7 @@
             color: #1f2937
         }
 
-        /* 响应式设计 - 平板 */
+        /* Responsive design - tablet */
         @media(max-width:768px) {
             .page-wrapper {
                 padding: 20px 16px;
@@ -451,7 +451,7 @@
             }
         }
 
-        /* 响应式设计 - 手机 */
+        /* Responsive design - mobile */
         @media(max-width:480px) {
             .page-wrapper {
                 padding: 12px;
@@ -482,7 +482,7 @@
             }
         }
 
-        /* 响应式设计 - 横屏 */
+        /* Responsive design - landscape */
         @media(max-height:600px) and (orientation:landscape) {
             .page-wrapper {
                 padding: 20px;
@@ -530,7 +530,7 @@
             text-align: center
         }
 
-        /* 错误消息样式 */
+        /* Error message styles */
         .login-error {
             margin-top: 24px;
             padding: 14px 18px;
@@ -588,7 +588,7 @@
             }
         }
 
-        /* 加载状态 */
+        
         .btn-loading {
             position: relative;
             color: transparent !important
@@ -615,17 +615,17 @@
             }
         }
 
-        /* 按钮全宽样式 */
+        
         .btn-full-width {
             width: 100%;
         }
 
-        /* 错误消息隐藏状态 */
+        
         .login-error-hidden {
             display: none;
         }
 
-        /* 模态框按钮容器 */
+        
         .modal-button-container {
             display: flex;
             flex-direction: row;
@@ -647,7 +647,7 @@
             }
         }
 
-        /* 科技感按钮倒计时及光效 */
+        
         .btn-tech-upgrade {
             position: relative;
             overflow: hidden;
@@ -668,7 +668,7 @@
             z-index: 2;
         }
 
-        /* 扫描影效 */
+        
         .btn-tech-upgrade::after {
             content: '';
             position: absolute;
@@ -809,8 +809,8 @@ html.edt-local-theme .card-container {
 html.edt-local-theme .card-container::before,
 html.edt-local-theme .module::before,
 html.edt-local-theme .header::before {
-    background: var(--edt-brand) !important;
-    background-image: none !important;
+    content: none !important;
+    display: none !important;
 }
 
 html.edt-local-theme h1,
@@ -996,13 +996,13 @@ html.edt-local-theme .footer-hint {
 </head>
 
 <body>
-    <!-- 背景内容 -->
+    <!-- Background content -->
     <iframe id="background-iframe" src="/" title="Background content"></iframe>
 
-    <!-- 毛玻璃效果遮盖层 -->
+    <!-- Glass overlay -->
     <div id="blur-overlay"></div>
 
-    <!-- 登录框容器 -->
+    <!-- Login card container -->
     <div class="page-wrapper">
         <div class="card-container">
             <div class="page-header">
@@ -1079,29 +1079,26 @@ html.edt-local-theme .footer-hint {
                     const modalContent = document.getElementById('ir-modal-content');
                     let contentHTML = '';
 
-                    // 按钮通用样式
                     const primaryBtnStyle = 'display: inline-block; background: linear-gradient(135deg, #faab41 0%, #f6821f 100%); color: white; text-decoration: none; padding: 16px 32px; border-radius: 14px; font-weight: 700; font-size: 17px; box-shadow: 0 8px 16px rgba(246, 130, 31, 0.2); transition: all 0.3s ease; border: none; cursor: pointer; margin: 10px; outline: none; position: relative; overflow: hidden;';
                     const secondaryBtnStyle = 'display: inline-block; background: #f3f4f6; color: #9ca3af; text-decoration: none; padding: 16px 32px; border-radius: 14px; font-weight: 500; font-size: 16px; transition: all 0.3s ease; border: none; cursor: pointer; margin: 10px; outline: none;';
 
                     if (lang.toLowerCase().startsWith('zh')) {
-                        // Chinese
                         contentHTML = `
                             <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 40px 20px; text-align: center;">
                                 <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;">🔒</div>
-                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;">👋 地域访问限制</h2>
+                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;">👋 Geographic Restriction</h2>
                             </div>
                             <div style="padding: 40px; text-align: left; line-height: 1.8;">
                                 <div style="background: #fdf2f2; border-left: 4px solid #dc2626; padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                                    <p style="font-size: 16px; color: #991b1b; margin: 0;">很遗憾，由于网络环境差异，此项目暂不适配伊朗用户的使用体验。为了给您提供更稳定、更优化的服务，我们强烈建议您使用由伊朗本地群组维护的专业项目。</p>
+                                    <p style="font-size: 16px; color: #991b1b; margin: 0;">We're unable to provide optimal service in your region. To get the best experience, we strongly recommend switching to specialized solutions maintained by the Iranian developer community.</p>
                                 </div>
                                 <div class="modal-button-container">
-                                    <button id="accept-suggestion" style="${primaryBtnStyle}">⭐ 使用 BPB-Worker-Panel</button>
-                                    <button id="stay-current" style="${secondaryBtnStyle}">继续使用当前项目</button>
+                                    <button id="accept-suggestion" style="${primaryBtnStyle}">⭐ Use BPB-Worker-Panel</button>
+                                    <button id="stay-current" style="${secondaryBtnStyle}">Continue with current project</button>
                                 </div>
                             </div>
                         `;
                     } else if (lang.toLowerCase().startsWith('en')) {
-                        // English
                         contentHTML = `
                             <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 40px 20px; text-align: center;">
                                 <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;">🔒</div>
@@ -1139,17 +1136,14 @@ html.edt-local-theme .footer-hint {
                     modalContent.innerHTML = contentHTML;
                     irModal.classList.add('show');
 
-                    // 倒计时逻辑
                     const acceptBtn = document.getElementById('accept-suggestion');
                     const stayBtn = document.getElementById('stay-current');
 
-                    // 注入动画进度条
                     const progressBar = document.createElement('div');
                     progressBar.className = 'btn-countdown-line';
                     acceptBtn.classList.add('btn-tech-upgrade');
                     acceptBtn.appendChild(progressBar);
 
-                    // 8秒倒计时自动跳转
                     const redirectTimer = setTimeout(() => {
                         window.location.href = redirectUrl;
                     }, 8000);
@@ -1183,10 +1177,8 @@ html.edt-local-theme .footer-hint {
             const errorMsg = document.getElementById('errorMsg');
             const passwordInput = document.getElementById('password');
 
-            // 清除之前的错误信息
             errorMsg.classList.add('login-error-hidden');
 
-            // 按钮加载状态
             loginBtn.disabled = true;
             loginBtn.classList.add('btn-loading');
 
@@ -1203,14 +1195,11 @@ html.edt-local-theme .footer-hint {
                     const contentType = response.headers.get('content-type');
 
                     if (contentType && contentType.includes('application/json')) {
-                        // 返回的是JSON，说明登录成功
                         const data = await response.json();
                         if (data.success) {
-                            // 登录成功，跳转到管理页面
                             window.location.href = '/admin';
                         }
                     } else {
-                        // 返回的是HTML，说明密码错误
                         errorMsg.textContent = 'Incorrect password. Please try again.';
                         errorMsg.classList.remove('login-error-hidden');
                         passwordInput.focus();
@@ -1221,95 +1210,15 @@ html.edt-local-theme .footer-hint {
                     errorMsg.classList.remove('login-error-hidden');
                 }
             } catch (error) {
-                console.error('登录错误:', error);
+                console.error('Login error:', error);
                 errorMsg.textContent = 'Network error. Please check your connection.';
                 errorMsg.classList.remove('login-error-hidden');
             } finally {
-                // 恢复按钮状态
                 loginBtn.disabled = false;
                 loginBtn.classList.remove('btn-loading');
             }
         });
     </script>
-    <script id="edt-local-localization">
-(() => {
-    const translations = {"登录设置页面":"Admin Login","背景内容":"Background content","请输入您的管理员密码":"Enter your administrator password","立即登录":"Sign in","由":"Powered by","强力驱动":"","密码错误，请重试":"Incorrect password. Please try again.","登录失败，请重试":"Sign-in failed. Please try again.","网络错误，请检查连接":"Network error. Please check your connection.","配置错误":"Configuration Error","未设置 管理员密码":"Administrator password is not set","请设置 变量名称 为":"Set the environment variable named","的环境变量":"before opening the dashboard.","未绑定 KV命名空间":"KV namespace is not bound","请绑定 变量名称 为":"Bind the KV namespace named","的 KV命名空间":"before opening the dashboard.","管理后台":"Admin Console","加载中...":"Loading...","🐣 我是小白！我想简单点！":"Simple Mode","我是小白！我想简单点！":"Simple Mode","⚠️重置配置":"Reset Settings","重置配置":"Reset Settings","👋退出登录":"Sign Out","退出登录":"Sign Out","Workers/Pages 请求使用情况":"Workers / Pages Request Usage","Workers 请求":"Workers Requests","Pages 请求":"Pages Requests","日配额":"Daily quota","每日请求数重置清零：":"Daily request count resets at:","距离重置还有":"Resets in","小时":"h","分钟":"min","分":"min","秒":"s","北京时间 (UTC+8)":"UTC+8 Time","今日使用情况总计：":"Total usage today:","🌍 当前网络信息":"Current Network","当前网络信息":"Current Network","国内测试":"Mainland Test","国外测试":"Global Test","墙外测试":"Outside Firewall Test","漏网之鱼":"Outlier","📋 获取节点链接":"Node Links","获取节点链接":"Node Links","节点链接格式":"Node link format","📱二维码":"QR Code","二维码":"QR Code","复制节点":"Copy Node","自适应订阅":"Adaptive Subscription","复制订阅":"Copy Subscription","Base64订阅":"Base64 Subscription","Clash订阅":"Clash Subscription","SingBox订阅":"SingBox Subscription","⚡️ 优选订阅生成":"Preferred Subscription Generator","优选订阅生成":"Preferred Subscription Generator","优选订阅模式":"Preferred mode","随机优选":"Random preferred","自定义订阅（支持汇聚订阅）":"Custom subscription (aggregated feeds supported)","随机优选数量":"Random preferred count","指定优选端口":"Preferred port","随机端口":"Random port","自定义优选地址":"Custom preferred addresses","在线优选":"Online selection","订阅接口":"Subscription API","取消":"Cancel","保存":"Save","⚙️ 详细配置信息":"Detailed Configuration","详细配置信息":"Detailed Configuration","订阅名称":"Subscription name","节点协议":"Node protocol","加密方式":"Encryption","传输协议":"Transport","gRPC模式":"gRPC mode","获取当前UA":"Get current UA","指纹伪装":"Fingerprint","跳过证书验证":"Skip certificate validation","随机伪装路径":"Random camouflage path","启用0-RTT(ed=2560)":"Enable 0-RTT (ed=2560)","启用分片(Shadowrocket)":"Enable fragmentation (Shadowrocket)","启用分片(Happ)":"Enable fragmentation (Happ)","ECH 设置":"ECH Settings","启用":"Enable","EchConfig DNS服务":"EchConfig DNS service","EchConfig 解析域名":"EchConfig lookup domain","自动获取（使用节点的伪装域名解析 EchConfig）":"Auto-fetch (resolve EchConfig with the node camouflage domain)","💡 为什么需要ECH？ECH又是什么？":"Why ECH? What is it?","为什么需要ECH？ECH又是什么？":"Why ECH? What is it?","🌐 Cloudflare CDN 访问设置":"Cloudflare CDN Access Settings","Cloudflare CDN 访问设置":"Cloudflare CDN Access Settings","反代模式":"Reverse proxy mode","启用自动获取":"Enable auto-fetch","启用全局代理":"Enable global proxy","💡 为什么需要反代？PROXYIP又是什么？":"Why reverse proxy? What is PROXYIP?","为什么需要反代？PROXYIP又是什么？":"Why reverse proxy? What is PROXYIP?","⚙️ 路径模板配置":"Path Template Configuration","路径模板配置":"Path Template Configuration","🗺️ 获取更多 PROXYIP":"More PROXYIP sources","🔒 获取更多 SOCKS5":"More SOCKS5 sources","🌐 获取更多 HTTP":"More HTTP sources","🌐 获取更多 HTTPS":"More HTTPS sources","获取更多 PROXYIP":"More PROXYIP sources","获取更多 SOCKS5":"More SOCKS5 sources","获取更多 HTTP":"More HTTP sources","获取更多 HTTPS":"More HTTPS sources","🔄 订阅转换配置":"Subscription Conversion","订阅转换配置":"Subscription Conversion","🔔 消息通知设置":"Notification Settings","消息通知设置":"Notification Settings","Telegram Bot 通知设置":"Telegram Bot Notifications","⚙️参数配置":"Parameters","参数配置":"Parameters","🗑️清除配置":"Clear Configuration","清除配置":"Clear Configuration","Cloudflare Workers/Pages 可用请求数统计":"Cloudflare Workers / Pages Request Quota","📋 查看操作日志":"View Operation Logs","查看操作日志":"View Operation Logs","全部日志":"All Logs","🚀 关于 edgetunnel":"About edgetunnel","关于 edgetunnel":"About edgetunnel","最新版本:":"Latest version:","当前版本:":"Current version:","需要更新":"Update available","📋 复制最新Worker.js源码 到剪贴板":"Copy latest Worker.js source to clipboard","复制最新Worker.js源码 到剪贴板":"Copy latest Worker.js source to clipboard","📦 下载最新Pages.zip源码 上传部署":"Download latest Pages.zip source for deployment","下载最新Pages.zip源码 上传部署":"Download latest Pages.zip source for deployment","📜 查看更新日志":"View changelog","查看更新日志":"View changelog","确认":"Confirm","关闭":"Off","添加":"Add","删除":"Delete","清空":"Clear","复制":"Copy","已复制":"Copied","刷新":"Refresh","测试":"Test","保存成功":"Saved successfully","保存失败":"Failed to save","成功":"Success","失败":"Failed","错误":"Error","警告":"Warning","提示":"Tip","默认":"Default","自定义":"Custom","自动":"Auto","手动":"Manual","推荐":"Recommended","高级":"Advanced","基础":"Basic","开启":"On","请选择":"Select","请输入":"Enter","不启用":"Disabled","未配置":"Not configured","已启用":"Enabled","已禁用":"Disabled"};
-    const entries = Object.entries(translations).sort((a, b) => b[0].length - a[0].length);
-    const textAttributes = ['placeholder', 'title', 'aria-label', 'alt', 'value'];
-    const blockedTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'CODE', 'PRE']);
-
-    const translateValue = (value) => {
-        if (!value || !/[\u3400-\u9fff]/.test(value)) return value;
-        let nextValue = value;
-        const compact = value.replace(/\s+/g, ' ').trim();
-        if (translations[compact]) {
-            const leading = value.match(/^\s*/)?.[0] || '';
-            const trailing = value.match(/\s*$/)?.[0] || '';
-            return `${leading}${translations[compact]}${trailing}`;
-        }
-        for (const [source, target] of entries) {
-            nextValue = nextValue.split(source).join(target);
-        }
-        return nextValue;
-    };
-
-    const translateElement = (element) => {
-        if (!element || blockedTags.has(element.tagName)) return;
-        for (const attribute of textAttributes) {
-            if (!element.hasAttribute(attribute)) continue;
-            const value = element.getAttribute(attribute);
-            const nextValue = translateValue(value);
-            if (nextValue !== value) element.setAttribute(attribute, nextValue);
-        }
-    };
-
-    const translateTextNode = (node) => {
-        const parent = node.parentElement;
-        if (!parent || blockedTags.has(parent.tagName)) return;
-        const nextValue = translateValue(node.nodeValue);
-        if (nextValue !== node.nodeValue) node.nodeValue = nextValue;
-    };
-
-    const translateTree = (root = document.body) => {
-        document.documentElement.lang = 'en';
-        document.documentElement.classList.add('edt-local-theme');
-        document.title = translateValue(document.title);
-        if (!root) return;
-        if (root.nodeType === Node.ELEMENT_NODE) translateElement(root);
-        const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
-        let node = walker.currentNode;
-        while (node) {
-            if (node.nodeType === Node.ELEMENT_NODE) translateElement(node);
-            if (node.nodeType === Node.TEXT_NODE) translateTextNode(node);
-            node = walker.nextNode();
-        }
-    };
-
-    const boot = () => {
-        translateTree(document.body);
-        const observer = new MutationObserver((mutations) => {
-            for (const mutation of mutations) {
-                for (const node of mutation.addedNodes) {
-                    if (node.nodeType === Node.TEXT_NODE) translateTextNode(node);
-                    if (node.nodeType === Node.ELEMENT_NODE) translateTree(node);
-                }
-                if (mutation.type === 'characterData') translateTextNode(mutation.target);
-                if (mutation.type === 'attributes') translateElement(mutation.target);
-            }
-        });
-        observer.observe(document.documentElement, {
-            subtree: true,
-            childList: true,
-            characterData: true,
-            attributes: true,
-            attributeFilter: textAttributes,
-        });
-    };
-
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once: true });
-    else boot();
-})();
-</script>
 </body>
 
 </html>

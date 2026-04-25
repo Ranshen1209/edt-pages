@@ -522,7 +522,7 @@
         }
 
         .login-error::before {
-            content: '⚠️';
+            content: '';
             flex-shrink: 0;
             font-size: 16px
         }
@@ -1059,15 +1059,15 @@ html.edt-local-theme .footer-hint {
                     if (lang.toLowerCase().startsWith('zh')) {
                         contentHTML = `
                             <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 40px 20px; text-align: center;">
-                                <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;">🔒</div>
-                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;">👋 Geographic Restriction</h2>
+                                <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;"></div>
+                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;"> Geographic Restriction</h2>
                             </div>
                             <div style="padding: 40px; text-align: left; line-height: 1.8;">
                                 <div style="background: #fdf2f2; border-left: 4px solid #dc2626; padding: 20px; border-radius: 12px; margin-bottom: 30px;">
                                     <p style="font-size: 16px; color: #991b1b; margin: 0;">We're unable to provide optimal service in your region. To get the best experience, we strongly recommend switching to specialized solutions maintained by the Iranian developer community.</p>
                                 </div>
                                 <div class="modal-button-container">
-                                    <button id="accept-suggestion" style="${primaryBtnStyle}">⭐ Use BPB-Worker-Panel</button>
+                                    <button id="accept-suggestion" style="${primaryBtnStyle}"> Use BPB-Worker-Panel</button>
                                     <button id="stay-current" style="${secondaryBtnStyle}">Continue with current project</button>
                                 </div>
                             </div>
@@ -1075,15 +1075,15 @@ html.edt-local-theme .footer-hint {
                     } else if (lang.toLowerCase().startsWith('en')) {
                         contentHTML = `
                             <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 40px 20px; text-align: center;">
-                                <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;">🔒</div>
-                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;">👋 Geographic Restriction</h2>
+                                <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;"></div>
+                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;"> Geographic Restriction</h2>
                             </div>
                             <div style="padding: 40px; text-align: left; line-height: 1.8;">
                                 <div style="background: #fdf2f2; border-left: 4px solid #dc2626; padding: 20px; border-radius: 12px; margin-bottom: 30px;">
                                     <p style="font-size: 16px; color: #991b1b; margin: 0;">We're unable to provide optimal service in your region. To get the best experience, we strongly recommend switching to specialized solutions maintained by the Iranian developer community.</p>
                                 </div>
                                 <div class="modal-button-container">
-                                    <button id="accept-suggestion" style="${primaryBtnStyle}">⭐ Use BPB-Worker-Panel</button>
+                                    <button id="accept-suggestion" style="${primaryBtnStyle}"> Use BPB-Worker-Panel</button>
                                     <button id="stay-current" style="${secondaryBtnStyle}">Continue with current project</button>
                                 </div>
                             </div>
@@ -1092,16 +1092,16 @@ html.edt-local-theme .footer-hint {
                         // Default to Persian (IR)
                         contentHTML = `
                             <div style="background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); padding: 40px 20px; text-align: center;">
-                                <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;">🔒</div>
-                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;">👋 دسترسی جغرافیایی محدود</h2>
+                                <div style="font-size: 64px; margin-bottom: 20px; animation: shake 2s infinite;"></div>
+                                <h2 style="color: white; font-size: 32px; font-weight: 800; letter-spacing: -1px; margin: 0;"> Geographic Restriction</h2>
                             </div>
                             <div style="padding: 40px; text-align: right; line-height: 1.8; direction: rtl;">
                                 <div style="background: #fdf2f2; border-right: 4px solid #dc2626; padding: 20px; border-radius: 12px; margin-bottom: 30px;">
-                                    <p style="font-size: 16px; color: #991b1b; margin: 0;">برای خدمات بهتر، ما پروژه‌های متخصص توسعه‌یافته توسط جامعه توسعه‌دهندگان ایرانی را توصیه می‌کنیم. این راه‌حل‌ها برای محیط شبکه شما بهینه‌سازی شده‌اند.</p>
+                                    <p style="font-size: 16px; color: #991b1b; margin: 0;">We're unable to provide optimal service in your region. To get the best experience, we strongly recommend switching to specialized solutions maintained by the Iranian developer community.</p>
                                 </div>
                                 <div class="modal-button-container" style="direction: ltr;">
-                                    <button id="accept-suggestion" style="${primaryBtnStyle}">⭐ استفاده از BPB-Worker-Panel</button>
-                                    <button id="stay-current" style="${secondaryBtnStyle}">ادامه استفاده از پروژه فعلی</button>
+                                    <button id="accept-suggestion" style="${primaryBtnStyle}"> Use BPB-Worker-Panel</button>
+                                    <button id="stay-current" style="${secondaryBtnStyle}">Continue with current project</button>
                                 </div>
                             </div>
                         `;

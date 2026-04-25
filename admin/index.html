@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="edt-local-theme">
 
 <head>
@@ -6263,7 +6263,7 @@
         }
 
         .risk-list li::before {
-            content: '•';
+            content: '-';
             position: absolute;
             left: 0;
         }
@@ -7049,7 +7049,7 @@
 
         
         .line-editor .mirror .logical-line::after {
-            content: "↵";
+            content: "Enter";
             position: absolute;
             right: -4px;
             bottom: 0;
@@ -7527,7 +7527,7 @@ html.edt-local-theme .social-link[title="Telegram"]:hover::before {
 
                         <!-- Information note -->
                         <div class="cf-info-box">
-                            <div class="cf-info-icon">ℹ️</div>
+                            <div class="cf-info-icon"></div>
                             <div class="cf-info-text">
                                 <strong>Daily request count resets at:</strong><br><span id="countdown" class="cf-highlight"><span
                                         class="countdown-text">Resets in</span> <span class="countdown-numbers"
@@ -7622,7 +7622,7 @@ html.edt-local-theme .social-link[title="Telegram"]:hover::before {
                             </div>
                         </div>
                     </div>
-                    <small style="font-size: 12px; color: #9ca3af; margin-top: 6px; display: block;">💡 <b>Mainland Test</b>
+                    <small style="font-size: 12px; color: #9ca3af; margin-top: 6px; display: block;"> <b>Mainland Test</b>
                         is determined by your proxy <b>routing rules</b> and<b>Global Test</b> is determined by your <b>preferred IP</b> while <b>Cloudflare, outside-firewall entry, and ChatGPT</b> is determined by your
                         <b>PROXYIP</b> decide it.</small>
                     <div class="module-content" style="display: none;" id="network-module-content">
@@ -7631,7 +7631,7 @@ html.edt-local-theme .social-link[title="Telegram"]:hover::before {
                             
                         </div>
                         <small
-                            style="font-size: 12px; color: #9ca3af; margin-top: 6px; display: block;">💡<b>For more tests</b>, visit
+                            style="font-size: 12px; color: #9ca3af; margin-top: 6px; display: block;"><b>For more tests</b>, visit
                             <a href="https://ip.skk.moe/" target="_blank" rel="noopener"
                                 style="font-weight: bold; color: #6b7280;">ip.skk.moe</a> and test manually.
                         </small>
@@ -7971,7 +7971,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             
             <div class="module collapsed advanced-module" id="echModule" style="display: none;">
                 <div class="module-title" onclick="toggleModule(this)">
-                    🔐 Encrypted Client Hello
+                     Encrypted Client Hello
                     <svg class="collapse-icon" viewBox="0 0 24 24">
                         <path d="M7 10l5 5 5-5z" />
                     </svg>
@@ -8386,7 +8386,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="qrcodeModal" onclick="closeQRCode(event)">
         <div class="modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeQRCode()">×</button>
+            <button type="button" class="modal-close" onclick="closeQRCode()">Close</button>
             <div id="qrcodeContainer" class="qrcode-container"></div>
             <button type="button" class="btn btn-primary btn-close-modal" onclick="closeQRCode()">disable</button>
         </div>
@@ -8395,7 +8395,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="versionInfoModal" onclick="closeVersionInfoModal(event)">
         <div class="modal version-info-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeVersionInfoModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeVersionInfoModal()">Close</button>
             <h2 class="version-info-title">About edgetunnel</h2>
             <div class="version-info-summary state-outdated" id="versionInfoSummary">
                 <p id="latestVersionInfoText" class="version-info-line"><strong>Latest version:</strong> <span
@@ -8405,9 +8405,9 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         class="version-state-tip is-outdated">Update available</span></p>
             </div>
             <div class="version-info-actions">
-                <button type="button" class="btn btn-version-copy" onclick="copyLatestWorkerSourceToClipboard()">📋
+                <button type="button" class="btn btn-version-copy" onclick="copyLatestWorkerSourceToClipboard()">
                     Copy latest Worker.js source to clipboard</button>
-                <button type="button" class="btn btn-version-download" onclick="openLatestPagesZipDownload()">📦
+                <button type="button" class="btn btn-version-download" onclick="openLatestPagesZipDownload()">
                     Download latest Pages.zip source for deployment</button>
                 <button type="button" class="btn btn-version-changelog" id="versionChangelogToggleBtn"
                     onclick="openVersionChangelogModal()">View changelog</button>
@@ -8419,7 +8419,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="versionChangelogModal" onclick="closeVersionChangelogModal(event)">
         <div class="modal version-changelog-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeVersionChangelogModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeVersionChangelogModal()">Close</button>
             <h2 class="version-info-title">Changelog</h2>
             <div class="version-changelog-wrapper">
                 <div class="version-changelog-content" id="versionChangelogContent">
@@ -8435,9 +8435,9 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="skipVerifyWarningModal" onclick="closeSkipVerifyWarning(event)">
         <div class="modal skipverify-warning-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeSkipVerifyWarning()">×</button>
+            <button type="button" class="modal-close" onclick="closeSkipVerifyWarning()">Close</button>
             <div class="skipverify-header">
-                <div class="skipverify-icon">⚠️</div>
+                <div class="skipverify-icon"></div>
                 <h2 class="skipverify-title">About skipping certificate validation</h2>
             </div>
             <div class="skipverify-content" style="text-align: left;">
@@ -8447,7 +8447,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     and later versions will gradually stop supporting "<strong>Skip certificate validation</strong>". This is a<strong>core security policy adjustment</strong> (<a
                         href="https://github.com/XTLS/Xray-core/commit/2c92339f95fe9aa493b6ae51d3b07017a44c4014"
                         target="_blank" rel="noopener" class="skipverify-link">Details</a>). </p>
-                <p class="skipverify-text"><strong>Impact:</strong>If your client (for example <strong>v2rayN、v2rayNG、Happ</strong> ) uses the
+                <p class="skipverify-text"><strong>Impact:</strong>If your client (for example <strong>v2rayN, v2rayNG, Happ</strong> ) uses the
                     <strong>Xray core</strong>, enabling this feature will cause <strong class="skipverify-title">the core to fail</strong>. 
                 </p>
             </div>
@@ -8503,7 +8503,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="logsModal">
         <div class="modal logs-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeLogsModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeLogsModal()">Close</button>
             <h2 class="logs-modal-title">All Operation Logs</h2>
             <div id="allLogsContainer" class="logs-all-container"></div>
             <button type="button" class="btn btn-primary btn-close-modal" onclick="closeLogsModal()">disable</button>
@@ -8513,7 +8513,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="subAPIModal">
         <div class="modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeSubAPIModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeSubAPIModal()">Close</button>
             <h2 class="subapi-modal-title">Subscription Converter Backend</h2>
             <div class="form-group subapi-form-group">
                 <label>Subscription converter backend</label>
@@ -8538,7 +8538,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     <!-- Telegram Bot notification settings modal -->
     <div class="modal-overlay" id="telegramConfigModal">
         <div class="modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeTelegramConfigModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeTelegramConfigModal()">Close</button>
             <h2 class="subapi-modal-title">Telegram Bot Notification Parameters</h2>
             <div class="form-group subapi-form-group">
                 <label>Bot Token</label>
@@ -8562,7 +8562,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="cloudflareConfigModal">
         <div class="modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeCloudflareConfigModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeCloudflareConfigModal()">Close</button>
             <h2 class="subapi-modal-title">Workers / Pages Request Quota</h2>
 
             
@@ -8630,7 +8630,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="onlineOptimizeModal">
         <div class="modal optimize-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeenabledlineOptimizeModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeenabledlineOptimizeModal()">Close</button>
             <h2 class="optimize-modal-title">enabledline Selection</h2>
 
             
@@ -8702,7 +8702,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="apiOptimizeModal">
         <div class="modal api-optimize-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeAPIOptimizeModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeAPIOptimizeModal()">Close</button>
             <h2 class="api-optimize-modal-title">Subscription API</h2>
 
             
@@ -8758,7 +8758,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="proxyVerificationModal">
         <div class="modal" id="proxyVerificationContent" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeProxyVerificationModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeProxyVerificationModal()">Close</button>
 
             <h2 id="proxyVerificationTitle"
                 style="margin-bottom: 20px; font-size: 18px; font-weight: 600; text-align: center;"></h2>
@@ -8830,7 +8830,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="proxyIPHelpModal" onclick="closeProxyIPHelpModal(event)">
         <div class="modal proxyip-help-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeProxyIPHelpModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeProxyIPHelpModal()">Close</button>
 
             
             <div id="proxyIPHelpSimple" style="display: none;">
@@ -8866,9 +8866,9 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                             rel="noopener" style="color: var(--primary-color); text-decoration: none;">TCP Sockets documentation</a> , the following technical limitation exists:
                     </p>
                     <div class="code-block">
-                        ⚠️ Outbound TCP sockets to <a href="https://www.cloudflare.com/ips/" target="_blank"
+                         Outbound TCP sockets to <a href="https://www.cloudflare.com/ips/" target="_blank"
                             rel="noopener" style="color: inherit; text-decoration: underline;">Cloudflare IP ranges
-                            ↗</a> are temporarily blocked, but will be re-enabled shortly.
+                            </a> are temporarily blocked, but will be re-enabled shortly.
                     </div>
 
                     <p style="margin: 16px 0; line-height: 1.8; color: var(--text-secondary);">
@@ -8895,13 +8895,13 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                                 <div style="font-weight: 600; color: #1976d2;">Cloudflare Workers</div>
                                 <div style="font-size: 0.9rem; color: var(--text-secondary);">Send request</div>
                             </div>
-                            <div style="color: var(--primary-color); font-size: 1.5rem;">→</div>
+                            <div style="color: var(--primary-color); font-size: 1.5rem;">-></div>
                             <div
                                 style="background: #f3e5f5; padding: 12px; border-radius: 8px; text-align: center; flex: 1; min-width: 120px;">
                                 <div style="font-weight: 600; color: #7b1fa2;">PROXYIP/SOCKS5/HTTP server</div>
                                 <div style="font-size: 0.9rem; color: var(--text-secondary);">Third-party proxy</div>
                             </div>
-                            <div style="color: var(--primary-color); font-size: 1.5rem;">→</div>
+                            <div style="color: var(--primary-color); font-size: 1.5rem;">-></div>
                             <div
                                 style="background: #e8f5e8; padding: 12px; border-radius: 8px; text-align: center; flex: 1; min-width: 120px;">
                                 <div style="font-weight: 600; color: #388e3c;">Cloudflare service</div>
@@ -8938,7 +8938,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="echHelpModal" onclick="closeECHHelpModal(event)">
         <div class="modal ech-help-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeECHHelpModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeECHHelpModal()">Close</button>
 
             
             <div class="ech-tabs">
@@ -8959,8 +8959,8 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         </p>
 
                         <p style="margin-bottom: 16px; line-height: 1.8; color: var(--text-secondary);">
-                            For a deeper technical explanation, see Cloudflare’s official blog:<br>
-                            👉 <a href="https://blog.cloudflare.com/zh-cn/announcing-encrypted-client-hello/"
+                            For a deeper technical explanation, see Cloudflare's official blog:<br>
+                             <a href="https://blog.cloudflare.com/zh-cn/announcing-encrypted-client-hello/"
                                 target="_blank" rel="noopener"
                                 style="color: var(--primary-color); text-decoration: none;">https://blog.cloudflare.com/zh-cn/announcing-encrypted-client-hello/</a>
                         </p>
@@ -9033,7 +9033,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         </p>
 
                         <ul style="margin: 12px 0 16px; padding-left: 20px; line-height: 1.8;">
-                            <li style="margin-bottom: 8px; color: var(--text-secondary);">✅ GFW
+                            <li style="margin-bottom: 8px; color: var(--text-secondary);"> GFW
                                 <strong>the real node domain cannot be read.</strong>
                             </li>
                             <li style="color: var(--text-secondary);">Externally observed domains are shown as:<code
@@ -9079,7 +9079,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         <h4 style="color: var(--text-primary); margin: 20px 0 12px;">Windows: </h4>
                         <ul style="margin: 12px 0 16px; padding-left: 20px; line-height: 1.8;">
                             <li style="margin-bottom: 8px; color: var(--text-secondary);">
-                                <strong>v2rayN ≥ v7.17.0</strong><br>
+                                <strong>v2rayN >= v7.17.0</strong><br>
                                 <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener"
                                     style="color: var(--primary-color); text-decoration: none;">https://github.com/2dust/v2rayN/releases</a>
                             </li>
@@ -9088,7 +9088,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         <h4 style="color: var(--text-primary); margin: 20px 0 12px;">Android: </h4>
                         <ul style="margin: 12px 0 16px; padding-left: 20px; line-height: 1.8;">
                             <li style="margin-bottom: 8px; color: var(--text-secondary);">
-                                <strong>v2rayNG ≥ v2.0.0</strong><br>
+                                <strong>v2rayNG >= v2.0.0</strong><br>
                                 <a href="https://github.com/2dust/v2rayNG/releases" target="_blank" rel="noopener"
                                     style="color: var(--primary-color); text-decoration: none;">https://github.com/2dust/v2rayNG/releases</a>
                             </li>
@@ -9100,7 +9100,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                                 All clients using <strong>the clash.meta / mihomo core</strong> support ECH.
                             </li>
                             <li style="color: var(--text-secondary);">
-                                ⚠️ <strong>DNS support is required.</strong>
+                                 <strong>DNS support is required.</strong>
                             </li>
                         </ul>
 
@@ -9137,7 +9137,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 <div class="ech-tab-pane" id="echTab2">
                     <div class="api-docs">
-                        <h2 class="section-title">🔍 How to confirm ECH is active?</h2>
+                        <h2 class="section-title"> How to confirm ECH is active?</h2>
 
                         <p style="margin-bottom: 16px; line-height: 1.8; color: var(--text-secondary);">
                             You can use a <strong>simple and direct method</strong> to verify whether ECH works.
@@ -9146,8 +9146,8 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         <h3 style="color: var(--text-primary); margin: 24px 0 16px;">Verification steps</h3>
 
                         <ol style="margin: 12px 0 16px; padding-left: 20px; line-height: 1.8;">
-                            <li style="margin-bottom: 12px; color: var(--text-secondary);">Open the node <strong>「⚙️
-                                    Detailed Configuration」</strong></li>
+                            <li style="margin-bottom: 12px; color: var(--text-secondary);">Open the node <strong>"
+                                    Detailed Configuration"</strong></li>
                             <li style="margin-bottom: 12px; color: var(--text-secondary);">In <strong>HOST</strong>
                                 manually enter a <strong>blocked domain from your current project</strong>, for example: <code
                                     style="background: #e9ecef; padding: 2px 4px; border-radius: 3px;">*.workers.dev</code>
@@ -9189,7 +9189,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="hostsEditModal">
         <div class="modal hosts-edit-modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="closeHostsEditModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeHostsEditModal()">Close</button>
             <h2 class="hosts-edit-modal-title">Edit Custom Node Domain List</h2>
 
             <div class="hosts-edit-container">
@@ -9210,7 +9210,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="pathTemplateConfigModal" onclick="closePathTemplateConfigModal(event)">
         <div class="modal" onclick="event.stopPropagation()" style="max-width: 500px;">
-            <button type="button" class="modal-close" onclick="closePathTemplateConfigModal()">×</button>
+            <button type="button" class="modal-close" onclick="closePathTemplateConfigModal()">Close</button>
             <h2 class="path-template-modal-title">Path Template Configuration</h2>
 
             <div class="path-template-hint"
@@ -9312,7 +9312,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             </div>
             <div class="modal-content-side">
                 <button type="button" class="modal-close" onclick="closeGetMoreProxyIPModal(event)"
-                    style="cursor: pointer;">×</button>
+                    style="cursor: pointer;">Close</button>
                 <h2 class="section-title" style="margin-bottom: 10px; text-align: center;">More PROXYIP sources</h2>
                 <p style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">
                     Reverse proxy resources come from GitHub,<a href="https://t.me/zip_cm_edu_kg" target="_blank"
@@ -9367,11 +9367,11 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             </div>
             <div class="modal-content-side">
                 <button type="button" class="modal-close" onclick="closeExploreSocks5Modal(event)"
-                    style="cursor: pointer;">×</button>
+                    style="cursor: pointer;">Close</button>
                 <h2 class="section-title" style="margin-bottom: 10px; text-align: center;">More SOCKS5 sources</h2>
                 <p style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">
                     Proxy resources come from GitHub,<a href="https://t.me/Enkelte_notif" target="_blank" rel="noopener noreferrer">Notif
-                        💬</a>channels, OTC contributors, and other open-source communities.
+                        </a>channels, OTC contributors, and other open-source communities.
                 </p>
                 <div class="socks5-list-container">
                     <div class="form-group">
@@ -9417,11 +9417,11 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             </div>
             <div class="modal-content-side">
                 <button type="button" class="modal-close" onclick="closeExploreHTTPModal(event)"
-                    style="cursor: pointer;">×</button>
+                    style="cursor: pointer;">Close</button>
                 <h2 class="section-title" style="margin-bottom: 10px; text-align: center;">More HTTP sources</h2>
                 <p style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">
                     Proxy resources come from GitHub,<a href="https://t.me/Enkelte_notif" target="_blank" rel="noopener noreferrer">Notif
-                        💬</a>channels, OTC contributors, and other open-source communities.
+                        </a>channels, OTC contributors, and other open-source communities.
                 </p>
                 <div class="http-list-container">
                     <div class="form-group">
@@ -9466,11 +9466,11 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             </div>
             <div class="modal-content-side">
                 <button type="button" class="modal-close" onclick="closeExploreHTTPSModal(event)"
-                    style="cursor: pointer;">×</button>
+                    style="cursor: pointer;">Close</button>
                 <h2 class="section-title" style="margin-bottom: 10px; text-align: center;">More HTTPS sources</h2>
                 <p style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">
                     Proxy resources come from GitHub,<a href="https://t.me/Enkelte_notif" target="_blank" rel="noopener noreferrer">Notif
-                        💬</a>channels, OTC contributors, and other open-source communities.
+                        </a>channels, OTC contributors, and other open-source communities.
                 </p>
                 <div class="http-list-container">
                     <div class="form-group">
@@ -9511,7 +9511,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="transportGrpcModal" onclick="closeTransportGrpcModal(event)">
         <div class="modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="hideTransportGrpcTooltip()">×</button>
+            <button type="button" class="modal-close" onclick="hideTransportGrpcTooltip()">Close</button>
             <div style="text-align: center; padding: 20px 0;">
                 <h2 style="color: #f44336; margin: 0 0 16px 0; font-size: 22px; font-weight: 700;">gRPC Notice</h2>
                 <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.6; text-align: left;">
@@ -9543,7 +9543,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="ssTLSDisableModal" onclick="closeSSTLSDisableModal(event)">
         <div class="modal" onclick="event.stopPropagation()">
-            <button type="button" class="modal-close" onclick="cancelDisableSSTLS()">×</button>
+            <button type="button" class="modal-close" onclick="cancelDisableSSTLS()">Close</button>
             <div style="text-align: center; padding: 20px 0;">
                 <h2 style="color: #f44336; margin: 0 0 16px 0; font-size: 22px; font-weight: 700;">Disable TLS transport encryption</h2>
                 <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.6; text-align: left;">
@@ -9554,7 +9554,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     <ol>
                         <li>The project must be deployed on <strong>Workers</strong>(not Pages).</li>
                         <li>
-                            In Cloudflare, disable "<strong>Always Use HTTPS</strong>”
+                            In Cloudflare, disable "<strong>Always Use HTTPS</strong>"
                             <div class="grpc-modal-path sstls-modal-path">
                                 <svg class="grpc-modal-path-icon" role="presentation" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="opacity: 0.55;">
@@ -9570,7 +9570,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         </li>
                         <li>
                             The port for the preferred IP/domain must be an <strong>HTTP</strong> type port, for example:
-                            <strong>80、8080、8880、2052、2082、2086、2095</strong>. 
+                            <strong>80, 8080, 8880, 2052, 2082, 2086, 2095</strong>. 
                         </li>
                     </ol>
                 </div>
@@ -9591,14 +9591,14 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
     
     <div class="modal-overlay" id="hostsMismatchModal" onclick="closeHostsMismatchModal(event)">
         <div class="modal" onclick="event.stopPropagation()" style="max-width: 500px;">
-            <button type="button" class="modal-close" onclick="closeHostsMismatchModal()">×</button>
+            <button type="button" class="modal-close" onclick="closeHostsMismatchModal()">Close</button>
             <div style="text-align: center; padding: 20px 0;">
                 <h2 style="color: #f44336; margin: 0 0 16px 0; font-size: 22px; font-weight: 700;">Domain Configuration Notice</h2>
                 <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.6; text-align: left;">
                     The domain currently used to access the admin panel is:<strong id="currentHostname" style="color: #2196F3;"></strong>
                 </p>
                 <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.6; text-align: left; color: #f44336;">
-                    <strong>⚠️ Note:</strong>This domain <strong>is not configured as a node camouflage domain</strong>. This means generated subscription configs will <strong>not use the current domain</strong> as
+                    <strong> Note:</strong>This domain <strong>is not configured as a node camouflage domain</strong>. This means generated subscription configs will <strong>not use the current domain</strong> as
                     <strong>Node domain</strong>. 
                 </p>
                 <p style="margin: 0 0 12px 0; font-size: 14px; line-height: 1.6; text-align: left;">
@@ -9641,6 +9641,20 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
         let cachedChangelogLoadedAt = 0;
         let pendingChangelogLoadPromise = null;
         let httpsProxyFeatureEnabled = false;
+
+        function cleanDisplayText(value) {
+            return String(value ?? '')
+                .replace(/[\u{1F000}-\u{1FAFF}-]/gu, '')
+                .replace(/[\u4e00-\u9fff]+/g, '')
+                .replace(/[\u3001\uff0c\u3002\uff1b\uff1a\uff08\uff09()\u3010\u3011\u300c\u300d\u300e\u300f\u300a\u300b]/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        function formatOptionLabel(label, fallback) {
+            const cleaned = cleanDisplayText(label);
+            return cleaned || fallback;
+        }
 
         function parseForcedLowPerformanceMode() {
             try {
@@ -10490,7 +10504,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     if (!success) throw new Error('execCommand copy failed');
                 }
 
-                showToast('✅ Latest Worker.js source copied to clipboard', 'success');
+                showToast(' Latest Worker.js source copied to clipboard', 'success');
             } catch (error) {
                 console.error('[Version] Failed to copy latest Worker.js source:', error);
                 showToast('Copy failed. Please copy the source manually.', 'error');
@@ -11048,7 +11062,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             const nodeHostInput = document.getElementById('nodeHost');
             if (hasMultipleHosts) {
-                nodeHostInput.value = currentConfig.HOSTS.join('、');
+                nodeHostInput.value = currentConfig.HOSTS.join(', ');
                 nodeHostInput.classList.add('nodeHost-clickable');
                 nodeHostInput.title = 'Click to edit multiple node hostnames';
                 nodeHostInput.onclick = openHostsEditModal;
@@ -11838,7 +11852,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 const dnsRegion = selectedDNSOption.dataset.region;
 
                 if (dnsRegion === 'domestic') {
-                    alert('⚠️ ECH configuration notice\n\nUsing the node HOST camouflage domain with Mainland DNS by default may cause ECH resolution failures.\n\nChoose one fix:\n① Change the ECH lookup domain to cloudflare-ech.com (recommended)\n② Switch ECH DNS to a global service (for example, NextDNS)');
+                    alert(' ECH configuration notice\n\nUsing the node HOST camouflage domain with Mainland DNS by default may cause ECH resolution failures.\n\nChoose one fix:\n1) Change the ECH lookup domain to cloudflare-ech.com (recommended)\n2) Switch ECH DNS to a global service (for example, NextDNS)');
                     select.value = 'cloudflare-ech.com';
                 }
             } else if (select.value === 'custom') {
@@ -12232,7 +12246,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
         function copySubscription(elementId) {
             const element = document.getElementById(elementId);
             navigator.clipboard.writeText(element.value).then(() => {
-                showToast('📋 Copied to clipboard', 'success');
+                showToast(' Copied to clipboard', 'success');
             }).catch(() => {
                 showToast('Copy failed', 'error');
             });
@@ -12347,7 +12361,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             currentConfig.HOSTS = items;
 
-            nodeHostInput.value = items.join('、');
+            nodeHostInput.value = items.join(', ');
 
             closeHostsEditModal();
 
@@ -12588,13 +12602,13 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             if (subConfigData && Array.isArray(subConfigData)) {
                 subConfigData.forEach(group => {
                     const optgroup = document.createElement('optgroup');
-                    optgroup.label = group.label;
+                    optgroup.label = formatOptionLabel(group.label, 'Subscription profiles');
 
                     if (group.options && Array.isArray(group.options)) {
                         group.options.forEach(option => {
                             const opt = document.createElement('option');
                             opt.value = option.value;
-                            opt.textContent = option.label;
+                            opt.textContent = formatOptionLabel(option.label, option.value);
                             optgroup.appendChild(opt);
                         });
                     }
@@ -12667,11 +12681,11 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 });
 
                 if (!response.ok) throw new Error('Save failed');
-                showToast('✅ Configuration saved. Update the subscription to get the latest node content.', 'success');
+                showToast(' Configuration saved. Update the subscription to get the latest node content.', 'success');
                 modifiedSections.delete(section);
                 updateButtonStates();
             } catch (error) {
-                showToast('😢 ' + error.message + ', Check your network environment or disable the proxy and try again.', 'error');
+                showToast(' ' + error.message + ', Check your network environment or disable the proxy and try again.', 'error');
             }
         }
 
@@ -12783,7 +12797,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             const states = {};
             document.querySelectorAll('.module').forEach((module, index) => {
                 const title = module.querySelector('.module-title')?.textContent?.trim() || ('module-' + index);
-                if (title !== '📋 View Operation Logs' && title !== '🌍 Current Network Information') {
+                if (title !== ' View Operation Logs' && title !== ' Current Network Information') {
                     states[title] = !module.classList.contains('collapsed');
                 }
             });
@@ -12800,9 +12814,9 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 const title = module.querySelector('.module-title')?.textContent?.trim() || ('module-' + index);
                 let shouldBeExpanded;
 
-                if (title === '📋 View Operation Logs') {
+                if (title === ' View Operation Logs') {
                     shouldBeExpanded = false;
-                } else if (title === '🌍 Current Network Information') {
+                } else if (title === ' Current Network Information') {
                     shouldBeExpanded = true;
                 } else {
                     shouldBeExpanded = isFirstVisit ? false : (states[title] !== false); // collapsed by default on first visit, then follows the saved state
@@ -12872,14 +12886,14 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             if (cardContainer.classList.contains('simple-mode')) {
                 cardContainer.classList.remove('simple-mode');
-                btn.textContent = '🐣 Simple mode: keep it easy';
+                btn.textContent = ' Simple mode: keep it easy';
                 localStorage.setItem('userMode', 'expert');
-                showToast('🚀 Switched to expert mode. All features are visible.', 'success');
+                showToast(' Switched to expert mode. All features are visible.', 'success');
             } else {
                 cardContainer.classList.add('simple-mode');
-                btn.textContent = '🚀 Expert mode: show everything';
+                btn.textContent = ' Expert mode: show everything';
                 localStorage.setItem('userMode', 'simple');
-                showToast('🐣 Switched to simple mode. Only common features are visible.', 'success');
+                showToast(' Switched to simple mode. Only common features are visible.', 'success');
             }
 
             requestAnimationFrame(() => {
@@ -12894,10 +12908,10 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             if (userMode === 'simple') {
                 cardContainer.classList.add('simple-mode');
-                btn.textContent = '🚀 Expert mode: show everything';
+                btn.textContent = ' Expert mode: show everything';
             } else {
                 cardContainer.classList.remove('simple-mode');
-                btn.textContent = '🐣 Simple mode: keep it easy';
+                btn.textContent = ' Simple mode: keep it easy';
             }
         }
 
@@ -12929,7 +12943,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
         const UUID_EASTER_LONG_PRESS_DELAY = 360;
         const UUID_EASTER_LONG_PRESS_INTERVAL = 120;
         const UUID_EASTER_FX_VERTICAL_OFFSET = 12;
-        const UUID_EASTER_GIFT_ICONS = ['🎁', '🎀', '🧧', '🎉'];
+        const UUID_EASTER_GIFT_ICONS = ['', '', '', ''];
         const UUID_EASTER_FIREWORK_PARTICLE_COUNT = 26;
         const UUID_SNIPPETS_JS_URL = 'https://raw.githubusercontent.com/EDT-Pages/EDT.min.js/Snippets/EDT.min.js';
         const UUID_SNIPPETS_DICT_URL = 'https://raw.githubusercontent.com/EDT-Pages/EDT.min.js/Snippets/%E5%AD%97%E5%85%B8.json';
@@ -13019,7 +13033,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             const rocket = document.createElement('div');
             rocket.className = 'uuid-rocket-fx';
-            rocket.textContent = '🚀';
+            rocket.textContent = '';
             rocket.style.left = `${launchX}px`;
             rocket.style.top = `${launchY}px`;
             rocket.style.setProperty('--rocket-x-drift', `${(Math.random() * 34 - 17).toFixed(1)}px`);
@@ -13180,7 +13194,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 copyBtn.setAttribute('aria-label', meta ? `${label}: ${meta}` : (label || ''));
             }
             if (copyBtnLabel && copyBtn?.disabled) {
-                copyBtnLabel.textContent = badgeKey === 'fail' ? 'Source rebuild failed' : '🔐 Waiting for source obfuscation rebuild';
+                copyBtnLabel.textContent = badgeKey === 'fail' ? 'Source rebuild failed' : ' Waiting for source obfuscation rebuild';
             }
         }
 
@@ -13469,7 +13483,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 }
             }
             if (copyBtnLabel && enabled) {
-                copyBtnLabel.textContent = '📋 Click to copy code';
+                copyBtnLabel.textContent = ' Click to copy code';
             }
         }
 
@@ -13517,7 +13531,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     tempTextarea.remove();
                     if (!copied) throw new Error('copy failed');
                 }
-                showToast('📋 Snippet.js code copied', 'success');
+                showToast(' Snippet.js code copied', 'success');
             } catch (error) {
                 showToast('Copy failed. Please copy the code manually', 'error');
             }
@@ -13807,7 +13821,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             try {
                 if (navigator.clipboard && window.isSecureContext) {
                     await navigator.clipboard.writeText(uuidValue);
-                    showToast('📋 UUID value copied', 'success');
+                    showToast(' UUID value copied', 'success');
                     return;
                 }
 
@@ -13827,7 +13841,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 tempTextarea.remove();
 
                 if (copied) {
-                    showToast('📋 UUID value copied', 'success');
+                    showToast(' UUID value copied', 'success');
                 } else {
                     showToast('Copy failed. Please copy the UUID manually', 'error');
                 }
@@ -14102,7 +14116,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             currentProxyType = proxyType;
             currentProxyFieldId = proxyType === 'socks5' ? 'socks5Addr' : (proxyType === 'https' ? 'httpsAddr' : 'httpAddr');
 
-            const title = proxyType === 'socks5' ? '🔒 SOCKS5 proxy verification' : (proxyType === 'https' ? '🌐 HTTPS proxy verification' : '🌐 HTTP proxy verification');
+            const title = proxyType === 'socks5' ? ' SOCKS5 proxy verification' : (proxyType === 'https' ? ' HTTPS proxy verification' : ' HTTP proxy verification');
             const label = proxyType === 'socks5' ? 'SOCKS5 proxy:' : (proxyType === 'https' ? 'HTTPS proxy:' : 'HTTP proxy:');
 
             document.getElementById('proxyVerificationTitle').textContent = title;
@@ -14148,7 +14162,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             try {
                 verifyBtn.disabled = true;
-                statusEl.textContent = '⏳ Validating...';
+                statusEl.textContent = ' Validating...';
                 statusEl.style.display = 'block';
                 statusEl.style.background = 'linear-gradient(135deg, #3b82f6 0, #1d4ed8 100%)';
                 statusEl.style.color = '#fff';
@@ -14180,14 +14194,14 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
                     statusEl.style.padding = '16px';
                     statusEl.style.borderRadius = '8px';
-                    statusEl.innerHTML = '❌ <strong>Backend version is too old</strong><br/><small style="opacity: 0.9;">Upgrade the edgetunnel code</small>';
+                    statusEl.innerHTML = ' <strong>Backend version is too old</strong><br/><small style="opacity: 0.9;">Upgrade the edgetunnel code</small>';
                     document.getElementById('proxyConfirmBtn').disabled = true;
                     document.getElementById('proxyConfirmBtn').style.opacity = '0.5';
                 } else if (data.success === false) {
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
                     statusEl.style.padding = '16px';
                     statusEl.style.borderRadius = '8px';
-                    statusEl.innerHTML = `❌ <strong>Invalid proxy</strong><br/><small style="opacity: 0.9;">${escapeLogHtml(data.error || 'Unknown error')}</small>`;
+                    statusEl.innerHTML = ` <strong>Invalid proxy</strong><br/><small style="opacity: 0.9;">${escapeLogHtml(data.error || 'Unknown error')}</small>`;
                     document.getElementById('proxyConfirmBtn').disabled = true;
                     document.getElementById('proxyConfirmBtn').style.opacity = '0.5';
                 } else if (data.success === true) {
@@ -14221,7 +14235,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                                     <div style="font-size: 10px; opacity: 0.7; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; color: #fff; text-align: center;">Egress IP</div>
                                     <div style="font-family: 'Fira Code', monospace; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 4px; color: #fff; text-decoration: underline; min-width: 0;" data-proxy-ip="${ip}" onclick="showIpDetailForProxy(this.dataset.proxyIp, this)">
                                         <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${ip}">${ip}</span>
-                                        <span style="font-size: 12px; opacity: 0.8; flex-shrink: 0;">🔍</span>
+                                        <span style="font-size: 12px; opacity: 0.8; flex-shrink: 0;"></span>
                                     </div>
                                 </div>
                             </div>
@@ -14229,7 +14243,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                             
                             <div style="background: rgba(255,255,255,0.1); padding: 8px 12px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; border-left: 3px solid #fff;">
                                 <div style="display: flex; align-items: center; gap: 6px;">
-                                    <span style="font-size: 14px;">⏱️</span>
+                                    <span style="font-size: 14px;"></span>
                                     <span style="font-size: 11px; font-weight: 500; opacity: 0.9; color: #fff;">Response latency</span>
                                 </div>
                                 <div style="font-family: 'Orbitron', sans-serif; font-size: 16px; font-weight: 800; color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.3);">
@@ -14250,9 +14264,9 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 statusEl.style.borderRadius = '8px';
 
                 if (error.name === 'AbortError') {
-                    statusEl.innerHTML = `❌ <strong>Validation timed out</strong><br/><small style="opacity: 0.9;">No response after 10 seconds. Check the proxy connection.</small>`;
+                    statusEl.innerHTML = ` <strong>Validation timed out</strong><br/><small style="opacity: 0.9;">No response after 10 seconds. Check the proxy connection.</small>`;
                 } else {
-                    statusEl.innerHTML = `❌ <strong>Validation failed</strong><br/><small style="opacity: 0.9;">${escapeLogHtml(error.message)}</small>`;
+                    statusEl.innerHTML = ` <strong>Validation failed</strong><br/><small style="opacity: 0.9;">${escapeLogHtml(error.message)}</small>`;
                 }
 
                 document.getElementById('proxyConfirmBtn').disabled = true;
@@ -14303,7 +14317,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
         function showProxyVerificationStatus(message, type) {
             const statusEl = document.getElementById('proxyVerificationStatus');
-            const prefix = type === 'error' ? '❌' : 'ℹ️';
+            const prefix = type === 'error' ? '' : '';
             statusEl.textContent = prefix + ' ' + message;
             statusEl.style.display = 'block';
             if (type === 'error') {
@@ -14350,7 +14364,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 showIpDetailModal(data);
             } catch (error) {
-                showToast('❌ Failed to query IP details');
+                showToast(' Failed to query IP details');
                 console.error('IP query error:', error);
             } finally {
                 if (targetElement) {
@@ -14408,13 +14422,13 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 apiList.forEach(item => {
                     const option = document.createElement('option');
                     option.value = item.value;
-                    option.textContent = `${item.label}[${item.value}]`;
+                    option.textContent = `${formatOptionLabel(item.label, 'Subscription API')}[${item.value}]`;
                     selectEl.appendChild(option);
                 });
 
                 const customOption = document.createElement('option');
                 customOption.value = 'custom';
-                customOption.textContent = '🔧 Custom';
+                customOption.textContent = ' Custom';
                 selectEl.appendChild(customOption);
 
                 if (currentValue && currentValue.trim()) {
@@ -14438,7 +14452,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 }
             } catch (error) {
                 console.error('Failed to load SUBAPI list:', error);
-                selectEl.innerHTML = '<option value="custom">🔧 Custom</option>';
+                selectEl.innerHTML = '<option value="custom"> Custom</option>';
                 selectEl.value = 'custom';
                 document.getElementById('customSubAPIInputGroup').style.display = 'block';
                 if (currentValue && currentValue.trim()) {
@@ -14887,7 +14901,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             try {
                 testBtn.disabled = true;
-                statusEl.textContent = '⏳ Checking...';
+                statusEl.textContent = ' Checking...';
                 statusEl.style.display = 'block';
                 statusEl.style.background = 'linear-gradient(135deg, #3b82f6 0, #1d4ed8 100%)';
                 statusEl.style.color = '#fff';
@@ -14902,25 +14916,25 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                     if (lowerContent.includes('subconverter')) {
                         statusEl.style.background = 'linear-gradient(135deg, #10b981 0, #059669 100%)';
-                        statusEl.textContent = '✅ ' + content;
+                        statusEl.textContent = ' ' + content;
                         document.getElementById('subAPIConfirmBtn').disabled = false;
                         document.getElementById('subAPIConfirmBtn').style.opacity = '1';
                         document.getElementById('subAPIConfirmBtn').dataset.validURL = baseURL;
                     } else {
                         statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
-                        statusEl.textContent = '❌ Invalid response content';
+                        statusEl.textContent = ' Invalid response content';
                         document.getElementById('subAPIConfirmBtn').disabled = true;
                         document.getElementById('subAPIConfirmBtn').style.opacity = '0.5';
                     }
                 } else {
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
-                    statusEl.textContent = '❌ Request failed (HTTP ' + response.status + ')';
+                    statusEl.textContent = ' Request failed (HTTP ' + response.status + ')';
                     document.getElementById('subAPIConfirmBtn').disabled = true;
                     document.getElementById('subAPIConfirmBtn').style.opacity = '0.5';
                 }
             } catch (error) {
                 statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
-                statusEl.textContent = '❌ Check failed: ' + error.message;
+                statusEl.textContent = ' Check failed: ' + error.message;
                 document.getElementById('subAPIConfirmBtn').disabled = true;
                 document.getElementById('subAPIConfirmBtn').style.opacity = '0.5';
             } finally {
@@ -14930,7 +14944,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
         function showStatus(message, type) {
             const statusEl = document.getElementById('subAPIStatus');
-            const prefix = type === 'error' ? '❌' : 'ℹ️';
+            const prefix = type === 'error' ? '' : '';
             statusEl.textContent = prefix + ' ' + message;
             statusEl.style.display = 'block';
             if (type === 'error') {
@@ -15109,7 +15123,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             }
 
             if (!token || !chatID) {
-                statusEl.textContent = '❌ Enter Bot Token and Chat ID';
+                statusEl.textContent = ' Enter Bot Token and Chat ID';
                 statusEl.style.display = 'block';
                 statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
                 statusEl.style.color = '#fff';
@@ -15120,7 +15134,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             try {
                 testBtn.disabled = true;
-                statusEl.textContent = '⏳ Validating...';
+                statusEl.textContent = ' Validating...';
                 statusEl.style.display = 'block';
                 statusEl.style.background = 'linear-gradient(135deg, #3b82f6 0, #1d4ed8 100%)';
                 statusEl.style.color = '#fff';
@@ -15133,7 +15147,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 const sendUrlParams = new URLSearchParams({
                     chat_id: chatID,
-                    text: '✅ Telegram notification configuration validated successfully.'
+                    text: ' Telegram notification configuration validated successfully.'
                 });
                 const sendResult = await requestTelegram('sendMessage', sendUrlParams, getMeResult.base);
                 const sendData = sendResult.data;
@@ -15144,13 +15158,13 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 console.log(`[TelegramBot] Validation succeeded; current endpoint: ${sendResult.base}`);
 
                 statusEl.style.background = 'linear-gradient(135deg, #10b981 0, #059669 100%)';
-                statusEl.textContent = '✅ Bot Token and Chat ID are valid';
+                statusEl.textContent = ' Bot Token and Chat ID are valid';
                 confirmBtn.disabled = false;
                 confirmBtn.style.opacity = '1';
 
             } catch (error) {
                 statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
-                statusEl.textContent = '❌ Validation failed: ' + error.message;
+                statusEl.textContent = ' Validation failed: ' + error.message;
                 confirmBtn.disabled = true;
                 confirmBtn.style.opacity = '0.5';
             } finally {
@@ -15190,7 +15204,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 if (response.ok) {
                     const result = await response.json();
-                    showToast('✅ Telegram bot configuration saved', 'success');
+                    showToast(' Telegram bot configuration saved', 'success');
                     closeTelegramConfigModal();
 
                     currentConfig.TG = {
@@ -15205,12 +15219,12 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     }, 1000);
                 } else {
                     const errorData = await response.json();
-                    showToast('❌ Save failed: ' + (errorData.error || 'Unknown error'), 'error');
+                    showToast(' Save failed: ' + (errorData.error || 'Unknown error'), 'error');
                     confirmBtn.disabled = false;
                     confirmBtn.textContent = 'saved';
                 }
             } catch (error) {
-                showToast('❌ Save failed: ' + error.message, 'error');
+                showToast(' Save failed: ' + error.message, 'error');
                 confirmBtn.disabled = false;
                 confirmBtn.textContent = 'saved';
             }
@@ -15283,7 +15297,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 globalAPIKey = document.getElementById('cloudflareGlobalAPIKey').value.trim();
 
                 if (!email || !globalAPIKey) {
-                    statusEl.textContent = '❌ Please enter Email and Global API Key';
+                    statusEl.textContent = ' Please enter Email and Global API Key';
                     statusEl.style.display = 'block';
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
                     statusEl.style.color = '#fff';
@@ -15297,7 +15311,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 apiToken = document.getElementById('cloudflareAPIToken').value.trim();
 
                 if (!accountID || !apiToken) {
-                    statusEl.textContent = '❌ Please enter Account ID and API Token';
+                    statusEl.textContent = ' Please enter Account ID and API Token';
                     statusEl.style.display = 'block';
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
                     statusEl.style.color = '#fff';
@@ -15310,7 +15324,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 usageAPI = document.getElementById('cloudflareUsageAPI').value.trim();
 
                 if (!usageAPI) {
-                    statusEl.textContent = '❌ Please enter the UsageAPI URL';
+                    statusEl.textContent = ' Please enter the UsageAPI URL';
                     statusEl.style.display = 'block';
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
                     statusEl.style.color = '#fff';
@@ -15323,7 +15337,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             try {
                 testBtn.disabled = true;
-                statusEl.textContent = '⏳ Checking...';
+                statusEl.textContent = ' Checking...';
                 statusEl.style.display = 'block';
                 statusEl.style.background = 'linear-gradient(135deg, #3b82f6 0, #1d4ed8 100%)';
                 statusEl.style.color = '#fff';
@@ -15355,7 +15369,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     statusEl.style.background = 'linear-gradient(135deg, #10b981 0, #059669 100%)';
                     const maxQuota = data.max || 100000;
                     const percentage = (data.total / maxQuota * 100).toFixed(2);
-                    statusEl.textContent = `✅ Validation passed. Today's request quota: ${data.total}/${maxQuota} (${percentage}%)`;
+                    statusEl.textContent = ` Validation passed. Today's request quota: ${data.total}/${maxQuota} (${percentage}%)`;
                     confirmBtn.disabled = false;
                     confirmBtn.style.opacity = '1';
                     confirmBtn.dataset.testPassed = 'true';
@@ -15368,14 +15382,14 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     confirmBtn.dataset.usageAPI = usageAPI;
                 } else {
                     statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
-                    statusEl.textContent = '❌ Validation failed: ' + (data.msg || 'Invalid credentials or insufficient permissions');
+                    statusEl.textContent = ' Validation failed: ' + (data.msg || 'Invalid credentials or insufficient permissions');
                     confirmBtn.disabled = true;
                     confirmBtn.style.opacity = '0.5';
                     confirmBtn.dataset.testPassed = 'false';
                 }
             } catch (error) {
                 statusEl.style.background = 'linear-gradient(135deg, #ef4444 0, #dc2626 100%)';
-                statusEl.textContent = '❌ Check failed: ' + error.message;
+                statusEl.textContent = ' Check failed: ' + error.message;
                 confirmBtn.disabled = true;
                 confirmBtn.style.opacity = '0.5';
                 confirmBtn.dataset.testPassed = 'false';
@@ -15431,7 +15445,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 });
 
                 if (response.ok) {
-                    showToast('✅ Cloudflare configuration saved', 'success');
+                    showToast(' Cloudflare configuration saved', 'success');
                     closeCloudflareConfigModal();
 
                     setTimeout(() => {
@@ -15439,12 +15453,12 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     }, 1000);
                 } else {
                     const errorData = await response.json();
-                    showToast('❌ Save failed: ' + (errorData.error || 'Unknown error'), 'error');
+                    showToast(' Save failed: ' + (errorData.error || 'Unknown error'), 'error');
                     confirmBtn.disabled = false;
                     confirmBtn.textContent = 'saved';
                 }
             } catch (error) {
-                showToast('❌ Save failed: ' + error.message, 'error');
+                showToast(' Save failed: ' + error.message, 'error');
                 confirmBtn.disabled = false;
                 confirmBtn.textContent = 'saved';
             }
@@ -15463,11 +15477,11 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 if (!response.ok) throw new Error('Save failed');
 
-                showToast('✅ Enabled state saved', 'success');
+                showToast(' Enabled state saved', 'success');
                 modifiedSections.delete('notification');
                 updateButtonStates();
             } catch (error) {
-                showToast('❌ Save failed: ' + error.message, 'error');
+                showToast(' Save failed: ' + error.message, 'error');
             }
         }
 
@@ -15495,15 +15509,15 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 if (response.ok && data.success) {
                     closeClearTelegramModal();
-                    showToast('✅ Telegram configuration cleared. The page will refresh soon...', 'success');
+                    showToast(' Telegram configuration cleared. The page will refresh soon...', 'success');
                     setTimeout(() => {
                         location.reload();
                     }, 1000);
                 } else {
-                    showToast('❌ Clear failed: ' + (data.message || 'Unknown error'), 'error');
+                    showToast(' Clear failed: ' + (data.message || 'Unknown error'), 'error');
                 }
             } catch (error) {
-                showToast('❌ Clear error: ' + error.message, 'error');
+                showToast(' Clear error: ' + error.message, 'error');
             }
         }
 
@@ -15529,15 +15543,15 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 if (response.ok && data.success) {
                     closeClearCloudflareModal();
-                    showToast('✅ Cloudflare configuration cleared. The page will refresh soon...', 'success');
+                    showToast(' Cloudflare configuration cleared. The page will refresh soon...', 'success');
                     setTimeout(() => {
                         location.reload();
                     }, 1000);
                 } else {
-                    showToast('❌ Clear failed: ' + (data.message || 'Unknown error'), 'error');
+                    showToast(' Clear failed: ' + (data.message || 'Unknown error'), 'error');
                 }
             } catch (error) {
-                showToast('❌ Clear error: ' + error.message, 'error');
+                showToast(' Clear error: ' + error.message, 'error');
             }
         }
 
@@ -15834,7 +15848,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             if (convertedURL !== urlInput) {
                 document.getElementById('apiOptimizeURL').value = convertedURL;
                 urlInput = convertedURL;
-                showToast('✅ GitHub link automatically converted to raw format', 'info');
+                showToast(' GitHub link automatically converted to raw format', 'info');
             }
 
             if (!isValidURL(urlInput)) {
@@ -15859,7 +15873,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                     document.getElementById('apiOptimizePort').value = detectedPort;
 
-                    showToast(`✅ Automatically detected the port in the URL: ${detectedPort}, and removed the port parameter`, 'success');
+                    showToast(` Automatically detected the port in the URL: ${detectedPort}, and removed the port parameter`, 'success');
                 }
             } catch (error) {
                 console.log('Failed to extract URL port parameter:', error);
@@ -15899,27 +15913,27 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     }
                     document.getElementById('btnAppendAPI').disabled = false;
                     document.getElementById('btnAppendResults').disabled = false;
-                    showToast('✅ API endpoint validated successfully.', 'success');
+                    showToast(' API endpoint validated successfully.', 'success');
                 } else {
-                    document.getElementById('apiOptimizeResults').value = '❌ The endpoint is unavailable. Check whether the URL and port are correct.';
+                    document.getElementById('apiOptimizeResults').value = ' The endpoint is unavailable. Check whether the URL and port are correct.';
                     const resultsTA = document.getElementById('apiOptimizeResults');
                     if (resultsTA._refreshLineEditor) {
                         resultsTA._refreshLineEditor();
                     }
                     document.getElementById('btnAppendAPI').disabled = true;
                     document.getElementById('btnAppendResults').disabled = true;
-                    showToast('❌ API endpoint validation failed. Check the endpoint.', 'error');
+                    showToast(' API endpoint validation failed. Check the endpoint.', 'error');
                 }
             } catch (error) {
                 console.error('API validation error:', error);
-                document.getElementById('apiOptimizeResults').value = `❌ Validation error: ${escapeLogHtml(error.message)}`;
+                document.getElementById('apiOptimizeResults').value = ` Validation error: ${escapeLogHtml(error.message)}`;
                 const resultsTA = document.getElementById('apiOptimizeResults');
                 if (resultsTA._refreshLineEditor) {
                     resultsTA._refreshLineEditor();
                 }
                 document.getElementById('btnAppendAPI').disabled = true;
                 document.getElementById('btnAppendResults').disabled = true;
-                showToast('❌ Validation error. Please try again later.', 'error');
+                showToast(' Validation error. Please try again later.', 'error');
             } finally {
                 const btn = document.getElementById('btnVerifyAPI');
                 btn.disabled = false;
@@ -15970,7 +15984,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             markModified('sub');
 
-            showToast('✅ API URL added to custom optimization addresses', 'success');
+            showToast(' API URL added to custom optimization addresses', 'success');
             closeAPIOptimizeModal();
         }
 
@@ -15978,7 +15992,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             const resultsTextarea = document.getElementById('apiOptimizeResults');
             const results = resultsTextarea.value.trim();
 
-            if (!results || results.startsWith('❌')) {
+            if (!results || results.startsWith('')) {
                 alert('Run the availability test and pass validation first');
                 return;
             }
@@ -15998,7 +16012,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             markModified('sub');
 
-            showToast('✅ API results added to custom optimization addresses', 'success');
+            showToast(' API results added to custom optimization addresses', 'success');
             closeAPIOptimizeModal();
         }
 
@@ -16048,7 +16062,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
                 if (loc !== 'CN') {
                     console.warn('[Online optimization] warning: non-CN access detected; proxy/VPN may be active');
-                    html += `<div class="ip-detection-warning" style="font-size: 16px; font-weight: 700; color: #dc2626; margin-top: 12px; line-height: 1.6;">⚠️ You are likely using a proxy/VPN environment. Use a direct network connection before running online optimization; otherwise the test results may be inaccurate.</div>`;
+                    html += `<div class="ip-detection-warning" style="font-size: 16px; font-weight: 700; color: #dc2626; margin-top: 12px; line-height: 1.6;"> You are likely using a proxy/VPN environment. Use a direct network connection before running online optimization; otherwise the test results may be inaccurate.</div>`;
                     btnStart.disabled = true;
                     btnStart.textContent = 'CN only';
                 } else {
@@ -16065,7 +16079,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 }
             } catch (error) {
                 console.error('[Online optimization] Check failed:', error);
-                detectionBox.innerHTML = '<div class="ip-detection-info">⚠️ Unable to access https://speed.cloudflare.com/cdn-cgi/trace to detect the network environment. Check the network connection or disable the proxy.</div>';
+                detectionBox.innerHTML = '<div class="ip-detection-info"> Unable to access https://speed.cloudflare.com/cdn-cgi/trace to detect the network environment. Check the network connection or disable the proxy.</div>';
                 btnStart.disabled = true;
                 btnStart.textContent = 'Check failed';
             }
@@ -16220,7 +16234,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                     return { ...candidate, index, text };
                 } catch (error) {
                     if (!(hasWinner && error.name === 'AbortError')) {
-                        console.warn(`[Raw request] ❌ ${candidate.label} fetch failed: ${escapeLogHtml(error.message)}`);
+                        console.warn(`[Raw request]  ${candidate.label} fetch failed: ${escapeLogHtml(error.message)}`);
                     }
                     throw error;
                 }
@@ -16644,7 +16658,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             if (!showAll && results.length > 16) {
                 finalHtml += `<div style="margin-top: 15px; text-align: center;">
                     <button type="button" class="btn btn-secondary" onclick="showCountryResults('${country}', true)" style="padding: 8px 16px; font-size: 12px;">
-                        📂 Show all IPs (${results.length} )
+                         Show all IPs (${results.length} )
                     </button>
                 </div>`;
             }
@@ -17549,7 +17563,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             const renderTwitterTip = (sourceName) => {
                 if (!tipElement) return;
-                tipElement.textContent = `· IP used for accessing ${sourceName}`;
+                tipElement.textContent = `- IP used for accessing ${sourceName}`;
             };
 
             const testSources = [
@@ -17718,7 +17732,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             });
         }
 
-        function boolToEmoji(value, trueEmoji = '✅', falseEmoji = '❌') {
+        function boolToEmoji(value, trueEmoji = '', falseEmoji = '') {
             return value ? trueEmoji : falseEmoji;
         }
 
@@ -17888,7 +17902,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 <div class="ip-detail-content">
                     <div class="ip-detail-header">
                         <h2 class="ip-detail-title">
-                            🔍 IP Details
+                             IP Details
                             <span class="ip-detail-source-tag">Source: ipapi.is</span>
                         </h2>
                         <button class="ip-detail-close" title="Close">&times;</button>
@@ -17904,7 +17918,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                             
                             <div class="ip-detail-left-col">
                                 <div class="ip-detail-card" style="height: 100%;">
-                                    <div class="ip-detail-section-title">📍 Basic Information</div>
+                                    <div class="ip-detail-section-title"> Basic Information</div>
                                     <div class="ip-detail-item" title="The public IP address currently being queried.">
                                         <span class="ip-detail-label">IP Address</span>
                                         <span class="ip-detail-value">${escapeMarkdownHtml(data.ip || 'Unknown')}</span>
@@ -17932,43 +17946,43 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                             <div class="ip-detail-right-col">
                                 
                                 <div class="ip-detail-card" style="height: 100%;">
-                                    <div class="ip-detail-section-title">🛡️ Security Checks</div>
+                                    <div class="ip-detail-section-title"> Security Checks</div>
                                     <div class="ip-detail-security-grid">
                                         <div class="ip-detail-item" title="Whether this IP belongs to a datacenter, cloud provider, or hosting service.">
                                             <span class="ip-detail-label">Datacenter</span>
-                                            <span class="ip-detail-value">${data.is_datacenter ? '<span class="warning-text">🏢 Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_datacenter ? '<span class="warning-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP is identified as a public proxy server.">
                                             <span class="ip-detail-label">Proxy Server</span>
-                                            <span class="ip-detail-value">${data.is_proxy ? '<span class="danger-text">⚠️ Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_proxy ? '<span class="danger-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP belongs to a known VPN provider.">
                                             <span class="ip-detail-label">VPN Connection</span>
-                                            <span class="ip-detail-value">${data.is_vpn ? '<span class="danger-text">⚠️ Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_vpn ? '<span class="danger-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP is a Tor exit node.">
                                             <span class="ip-detail-label">Tor Network</span>
-                                            <span class="ip-detail-value">${data.is_tor ? '<span class="danger-text">⚠️ Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_tor ? '<span class="danger-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP is identified as crawler traffic.">
                                             <span class="ip-detail-label">Crawler</span>
-                                            <span class="ip-detail-value">${data.is_crawler ? '<span class="danger-text">🤖 Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_crawler ? '<span class="danger-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP comes from a mobile network operator.">
                                             <span class="ip-detail-label">Mobile Network</span>
-                                            <span class="ip-detail-value">${data.is_mobile ? '<span class="success-text">📱 Yes</span>' : 'No'}</span>
+                                            <span class="ip-detail-value">${data.is_mobile ? '<span class="success-text"> Yes</span>' : 'No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP comes from a satellite internet provider.">
                                             <span class="ip-detail-label">Satellite Network</span>
-                                            <span class="ip-detail-value">${data.is_satellite ? '<span class="success-text">🛰️ Yes</span>' : 'No'}</span>
+                                            <span class="ip-detail-value">${data.is_satellite ? '<span class="success-text"> Yes</span>' : 'No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP has known abuse history.">
                                             <span class="ip-detail-label">Known Abuse</span>
-                                            <span class="ip-detail-value">${data.is_abuser ? '<span class="danger-text">⚠️ Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_abuser ? '<span class="danger-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                         <div class="ip-detail-item" title="Whether this IP is a bogon, reserved, private, or unallocated address.">
                                             <span class="ip-detail-label">Bogon IP</span>
-                                            <span class="ip-detail-value">${data.is_bogon ? '<span class="danger-text">⚠️ Yes</span>' : '✅ No'}</span>
+                                            <span class="ip-detail-value">${data.is_bogon ? '<span class="danger-text"> Yes</span>' : ' No'}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -18150,7 +18164,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             selectedProxyIPs.forEach(ip => {
                 const dataList = window.proxyIPListData || [];
                 const proxyData = dataList.find(p => p.ip === ip);
-                const emoji = proxyData?.country_emoji || '🌐';
+                const emoji = proxyData?.country_emoji || '';
 
                 let titleText = '';
                 if (proxyData) {
@@ -18172,7 +18186,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                 const label = document.createElement('span');
                 label.textContent = `${emoji} ${ip}`;
                 const removeButton = document.createElement('span');
-                removeButton.textContent = '×';
+                removeButton.textContent = 'Close';
                 removeButton.style.cssText = 'cursor: pointer; font-weight: bold; font-size: 16px;';
                 removeButton.addEventListener('click', () => removeSelectedProxyIP(ip));
                 tag.appendChild(label);
@@ -18383,7 +18397,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             function generateProxyOption(proxy, isSelectable = false) {
                 const status = verificationStatus[proxy.proxy] || { status: 'pending' };
-                let emoji = '⏳';
+                let emoji = '';
                 let statusText = 'Validating';
 
                 if (status.status === 'success') {
@@ -18392,23 +18406,23 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                         const supportsV6 = status.supports_ipv6 === true;
 
                         if (supportsV4 && supportsV6) {
-                            emoji = '✅✅';
+                            emoji = '';
                         } else if (supportsV4 && !supportsV6) {
-                            emoji = '✅🔴';
+                            emoji = '';
                         } else if (!supportsV4 && supportsV6) {
-                            emoji = '🔴✅';
+                            emoji = '';
                         } else {
-                            emoji = '🔴🔴';
+                            emoji = '';
                         }
                     } else {
-                        emoji = '✅';
+                        emoji = '';
                     }
                     statusText = `${status.responseTime}ms`;
                 } else if (status.status === 'timeout') {
-                    emoji = '🔴';
+                    emoji = '';
                     statusText = 'Timed out';
                 } else if (status.status === 'failed') {
-                    emoji = '🔴';
+                    emoji = '';
                     statusText = 'Unavailable';
                 }
 
@@ -18649,7 +18663,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
                             country: item.meta?.country || 'Unknown',
                             country_cn: item.meta?.country_cn || 'Unknown',
                             country_en: item.meta?.country_en || 'Unknown',
-                            country_emoji: item.meta?.country_emoji || '🏳️',
+                            country_emoji: item.meta?.country_emoji || '',
                             city: item.meta?.city || 'Unknown',
                             clientIp: item.meta?.clientIp || item.ip,
                             asn: item.meta?.asn || 0,
@@ -18670,13 +18684,13 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
         }
 
         const continentInfo = {
-            'AS': { emoji: '🌏', name: 'Asia' },
-            'NA': { emoji: '🌎', name: 'North America' },
-            'EU': { emoji: '🌍', name: 'Europe' },
-            'AF': { emoji: '🌍', name: 'Africa' },
-            'SA': { emoji: '🌎', name: 'South America' },
-            'OC': { emoji: '🌏', name: 'Oceania' },
-            'AN': { emoji: '❄️', name: 'Antarctica' }
+            'AS': { emoji: '', name: 'Asia' },
+            'NA': { emoji: '', name: 'North America' },
+            'EU': { emoji: '', name: 'Europe' },
+            'AF': { emoji: '', name: 'Africa' },
+            'SA': { emoji: '', name: 'South America' },
+            'OC': { emoji: '', name: 'Oceania' },
+            'AN': { emoji: '', name: 'Antarctica' }
         };
 
         function populateProxyRegionSelect(type) {
@@ -18689,7 +18703,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             for (const [country, proxies] of Object.entries(window[config.countryMap])) {
                 const proxy = proxies[0]; // use the first proxy to determine continent information
                 const continent = proxy.continent || 'Unknown';
-                const continentData = continentInfo[continent] || { emoji: '🌍', name: continent };
+                const continentData = continentInfo[continent] || { emoji: '', name: continent };
 
                 if (!continentMap[continent]) {
                     continentMap[continent] = {
@@ -19144,9 +19158,9 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
             if (overlay) {
                 const modal = overlay.querySelector('.modal');
                 overlay.classList.add('show');
-                console.log('✓ Domain mismatch notice displayed');
+                console.log(' Domain mismatch notice displayed');
             } else {
-                console.error('✗ Could not find hostsMismatchModal element');
+                console.error(' Could not find hostsMismatchModal element');
             }
         }
 
@@ -19169,7 +19183,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@ranshen1209.github.io:443?security=
 
             closeHostsMismatchModal({ target: { id: 'hostsMismatchModal' } });
 
-            showToast('🎉 This notice will not appear again for 24 hours', 'info');
+            showToast(' This notice will not appear again for 24 hours', 'info');
         }
 
     </script>
